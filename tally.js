@@ -27,7 +27,7 @@ q.addEventListener("click",function(){
 
 reset.addEventListener("click",()=>{
   box.innerHTML = 0;
-  window.location.href='tallyCounter.html';
+  window.location.href='index.html';
 
 })
 
@@ -69,4 +69,5 @@ startval.addEventListener('click',(e)=>{
     }
   
 })
+
 
