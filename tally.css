@@ -1,0 +1,145 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(106, 154, 154);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(107, 114, 95);
+  /* height: 250px;
+  width: 250px; */
+  padding: 50px;
+  /* padding-top: 2%; */
+  border-radius: 10px;
+  height: 60vh;
+  width: 30%;
+  box-shadow:2px 3px 5px 5px rgb(94, 69, 69);
+  
+}
+h1{
+  font-weight: 800;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(221, 204, 219);
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+#input{
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 2px 5px 2px rgb(9, 28, 9);
+  padding: 8px 13px 10px 10px;
+  
+ height: 5.2vh;
+  width: 20vw;
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: end;
+}
+.box2{
+  display: flex;
+  flex-direction: column;
+ gap: 8px;
+}
+.box2 button{
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.box2 button:hover{
+  background-color: white;
+  color: black;
+}
+.box3{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  height: 20vh;
+}
+.box{
+  margin: 15px;
+   display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.box button{
+  width: 8vw;
+  height: 5vh;
+  font-size: 40px ;
+  display: flex; 
+  margin-bottom: 10px;
+ justify-content: center;
+ align-items: center;
+ border-radius: 8px;
+ background-color:gray ;
+ cursor: pointer;
+}
+.box button:hover{
+  background-color: burlywood;
+}
+
+/* here media query is applied*/
+
+@media (min-width: 601px) and (max-width:950px) {
+  .container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #input{
+     width: 110%;
+    
+  }
+  .box button {
+    width:14vw;
+  }
+  .box2 button{
+       font-size: 12px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #input{
+     width: 120%;
+    
+  }
+  .box button {
+    width:30vw;
+  }
+  .box2 button{
+       font-size: 11px;
+  }
+  h1{
+    font-weight: 600;
+    /* font-size: 20px; */
+    margin-bottom: 40px
+  }
+  
+}
+
